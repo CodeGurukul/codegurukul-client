@@ -1,0 +1,38 @@
+{
+  "name": "codegurukul client",
+  "version": "0.1.0",
+  "authors": [
+    "Sobin George Thomas <sobingt@gmail.com>"
+  ],
+  "description": "codegurukul angularjs client",
+  "main": "app.js",
+  "keywords": [
+    "codegurukul",
+    "code",
+    "academy",
+    "workshop",
+    "hackathon",
+    "angularjs",
+    "nodejs",
+    "rubyonrails"
+  ],
+  "license": "MIT",
+  "homepage": "codegurukul.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.8",
+    "angular-ui-router": "~0.2.13",
+    "angularjs-socialshare": "~0.1.4",
+    "angular-google-maps": "~2.0.19",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0",
+    "mixitup": "~2.1.8",
+    "jquery.easing": "~1.3.1"
+  }
+}
