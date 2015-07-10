@@ -1,0 +1,226 @@
+.container.wrapper
+  .row.top-menu
+    ul.pull-left
+      li
+        a(href='tel:+91809741508')
+          i.fa.fa-phone
+          span +91 8097415085
+      li
+        a(href='mailto:info@codegurukul.com')
+          i.fa.fa-envelope
+          span info@codegurukul.com
+    ul.pull-right(ng-show='currentUser')
+      li.logout-link(ng-click='logout()')
+        a
+          i.fa.fa-lock
+          span Mumbai, In
+  #home-main.content.row
+    header.navbar.navbar-static-top.navbar-sticky.white.navbar-stuck(role='banner')
+      .navbar-header
+        button.navbar-toggle.collapsed(data-target='.main-navbar', data-toggle='collapse', data-original-title='', title='')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/')
+          img(src='images/logo-small.jpg', alt='Codegurkul')
+      nav.collapse.navbar-collapse.main-navbar(role='navigation')
+        .main-menu-container
+          ul#main-menu.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Home
+            li
+              a(href='#') Program
+            li
+              a(href='#') Contact
+            li
+              a(href='#')
+                span Login
+            li
+            li
+              a(href='#loginModal', data-toggle='modal')
+                span.button Get Started
+            li
+    section.section.home-intro.white
+      .container
+        header.section-header.text-center.underline
+          h1.headline Let's
+          h1.headline Talk
+          h1.headline Code
+          .overlay
+            h2 Codegurukul
+            h4 Specializing In Programming Education
+            h4 For Careers In The Information Technology Industry
+    section.section.home-feature.grey
+      .decor-top
+        svg.decor(height='100%', preserveaspectratio='none', version='1.1', viewbox='0 0 100 100', width='100%', xmlns='http://www.w3.org/2000/svg')
+          path(d='M0 100 L100 0 L100 100', stroke-width='0')
+      .container
+        header.section-header.text-center.underline
+          h2 Redefining Learning
+          h4 We are All Markers At Heart
+          h4 Codegurukul Belives In Proding Foundation & Support
+          h4 To Help Grow Idea From Start To Sucess
+        .feature-row.row
+          .col-md-4.col-xs-offset-2.text-center
+            i.fa.fa-users.fa-5x
+            h3.text-center
+              | Mentor
+            p.text-center
+              span
+                | Our Mentors Are Professionals
+              span
+                | Working At Major Tech Firm &
+              span
+                | Are Passionate About Both Teaching
+              span
+                | & Your Success
+          .col-md-4.text-center
+            i.fa.fa-comments.fa-5x
+            h3.text-center
+              | Community
+            p.text-center
+              span
+                | Codegurukul Regularly Hosts
+              span
+                | Inspiring & Educational Events
+              span
+                | Featuring The Most Talented
+              span
+                | Professionals Working In The Industry
+          .col-md-2.text-center
+        .feature-row.row
+          .col-md-4.col-xs-offset-2.text-center
+            i.fa.fa-moon-o.fa-5x
+            h3.text-center
+              | Night School
+            p.text-center
+              span
+                | Learn Programming Skills
+              span
+                | & Keep Your Day Job
+              span
+                | Codegurukul Allows You To Continue
+              span
+                | Learning On Nights & Weekends
+          .col-md-4.text-center
+            i.fa.fa-code.fa-5x
+            h3.text-center
+              | RealWorld Projects
+            p.text-center
+              span
+                | We Setup Codegurukul To Resemble
+              span
+                | A Real Work Environment
+              span
+                | You Will Work In Teams Using
+              span
+                | Agile Methods The Professionals Use
+          .col-md-2.text-center
+    section.section.home-mentor.white
+      .decor-top
+        svg.decor(height='100%', preserveaspectratio='none', version='1.1', viewbox='0 0 100 100', width='100%', xmlns='http://www.w3.org/2000/svg')
+          path(d='M0 100 L100 0 L100 100', stroke-width='0')
+      .container
+        header.section-header.text-center.underline
+          h1.headline BadAss
+          h1.headline Mentors
+          .overlay
+            h2 Expert Teachers
+            h4 Our Mentors Are Seasoned Solution Architects
+            h4 With Years Of Real World Enterprise Expereince
+        #mentors
+          .group.text-center
+            span.btn.filter(data-filter='all') All
+            span.btn.filter(data-filter='.html5') HTML5
+            span.btn.filter(data-filter='.css3') CSS3
+            span.btn.filter(data-filter='.nodejs') Nodejs
+            span.btn.filter(data-filter='.scrum') Scrum
+            span.btn.filter(data-filter='.aws') AWS
+            span.btn.filter(data-filter='.ruby-on-rails') Ruby on Rails
+            span.btn.filter(data-filter='.ios') IOS
+          .group.text-center
+            .mix.javascript(data-myorder='1')
+            .mix.nodejs(data-myorder='6')
+            .mix.aws(data-myorder='3')
+            .mix.ruby-on-rails(data-myorder='2')
+            .mix.ios(data-myorder='4')
+            .mix.html5(data-myorder='5')
+    section.section.home-testimonal.grey
+      .decor-top
+        svg.decor(height='100%', preserveaspectratio='none', version='1.1', viewbox='0 0 100 100', width='100%', xmlns='http://www.w3.org/2000/svg')
+          path(d='M0 100 L100 0 L100 100', stroke-width='0')
+      .container
+        header.section-header.text-center.underline
+          h2 Testimonals
+          h4 We are All Markers At Heart
+          h4 Codegurukul Belives In Proding Foundation & Support
+          h4 To Help Grow Idea From Start To Sucess
+    section.section.home-course.white
+      .decor-top
+        svg.decor(height='100%', preserveaspectratio='none', version='1.1', viewbox='0 0 100 100', width='100%', xmlns='http://www.w3.org/2000/svg')
+          path(d='M0 100 L100 0 L100 100', stroke-width='0')
+      .container
+        header.section-header.text-center.underline
+          h1.headline Rockstar
+          h1.headline Programs
+          .overlay
+            h2 Popular Courses
+            h4 Our Mentors Are Seasoned Solution Architects
+            h4 With Years Of Real World Enterprise Expereince
+        .programs.row
+          .col-md-4.text-center
+          .col-md-4.text-center
+          .col-md-4.text-center
+    section.section.home-footer.grey
+      .decor-top
+        svg.decor(height='100%', preserveaspectratio='none', version='1.1', viewbox='0 0 100 100', width='100%', xmlns='http://www.w3.org/2000/svg')
+          path(d='M0 0 L50 100 L100 0 L100 100 L0 100', stroke-width='0')
+      .container
+        .footer.row
+          .col-md-12.text-center
+            i.fa.fa-facebook-square.fa-3x
+            i.fa.fa-twitter-square.fa-3x
+            i.fa.fa-github-square.fa-3x
+#loginModal.modal.fade.login
+  .modal-dialog.login.animated
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+        h4.modal-title Login with
+      .modal-body
+        .box
+          .content
+            .social
+              a.circle.github(href='/auth/github')
+                i.fa.fa-github.fa-fw
+              a#google_login.circle.google(href='/auth/google_oauth2')
+                i.fa.fa-google-plus.fa-fw
+              a#facebook_login.circle.facebook(href='/auth/facebook')
+                i.fa.fa-facebook.fa-fw
+            .division
+              .line.l
+              span or
+              .line.r
+            .error
+            .form.loginBox
+              form(method='post', action='/login', accept-charset='UTF-8')
+                input#email.form-control(type='text', placeholder='Email', name='email')
+                input#password.form-control(type='password', placeholder='Password', name='password')
+                input.btn.btn-default.btn-login(type='button', value='Login', onclick='loginAjax()')
+        .box
+          .content.registerBox(style='display:none;')
+            .form
+              form(method='post', html='{:multipart=>true}', data-remote='true', action='/register', accept-charset='UTF-8')
+                input#email.form-control(type='text', placeholder='Email', name='email')
+                input#password.form-control(type='password', placeholder='Password', name='password')
+                input#password_confirmation.form-control(type='password', placeholder='Repeat Password', name='password_confirmation')
+                input.btn.btn-default.btn-register(type='submit', value='Create account', name='commit')
+      .modal-footer
+        .forgot.login-footer
+          span
+            | Looking to 
+            a(href='javascript: showRegisterForm();') create an account
+            |                             ?
+        .forgot.register-footer(style='display:none')
+          span Already have an account?
+          a(href='javascript: showLoginForm();') Login
