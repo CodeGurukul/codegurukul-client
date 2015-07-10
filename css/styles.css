@@ -1,74 +1,84 @@
 @font-face {
-    font-family: "Nunito Bold";
-    src: url("../fonts/Nunito-Bold.ttf");
+  font-family: "Nunito Bold";
+  src: url("../fonts/Nunito-Bold.ttf");
 }
 @font-face {
-    font-family: "Nunito Light";
-    src: url("../fonts/Nunito-Light.ttf");
+  font-family: "Nunito Light";
+  src: url("../fonts/Nunito-Light.ttf");
 }
 @font-face {
-    font-family: "Nunito Regular";
-    src: url("../fonts/Nunito-Regular.ttf");
+  font-family: "Nunito Regular";
+  src: url("../fonts/Nunito-Regular.ttf");
 }
 @font-face {
-    font-family: "Edo SZ";
-    src: url("../fonts/edosz.ttf");
+  font-family: "Edo SZ";
+  src: url("../fonts/edosz.ttf");
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-    background-color: #E6E9ED;
-    font-family: Nunito Regular,'Helvetica Neue',sans-serif;
+  background-color: #E6E9ED;
+  font-family: Nunito Regular,'Helvetica Neue',sans-serif;
 }
 
 .wrapper, #home-main {  
-    height: 100% 
+  height: 100% 
 }
 
 .top-menu {
-    height: 30px;
-    padding-top: 5px;
-    padding-left: 16px;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 16px;
+  margin-bottom: 10px;
 }
 
 .top-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .top-menu ul li {
-    display: inline;
+  display: inline;
 }
 
 .top-menu ul i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .top-menu ul li a {
-    margin-right: 20px;
-    color: #AAB2BD;
-    font-size: 10px;
+  margin-right: 20px;
+  color: #AAB2BD;
+  font-size: 10px;
 }
 
 header.navbar {
-    height: 97px;
+  height: 97px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .navbar-brand>img {
-    height: 50px;
+  height: 50px;
+}
+
+.brand-logo{
+  padding: 30px;
 }
 
 .navbar-toggle {
-    margin-top: 18px;
-    margin-bottom: 18px
+  margin-top: 18px;
+  margin-bottom: 18px
+}
+
+.main-navbar{
+  border-radius: 5px 5px 0px 0px;
 }
 
 .navbar-toggle .icon-bar {
@@ -76,54 +86,54 @@ header.navbar {
 }
 
 .navbar-collapse {
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 header.navbar.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .menu-padding {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .home-intro .container {
-    position: relative;
+  position: relative;
 }
 
 .main-menu-container {
-    font-size: 10px;
-    padding-top: 12px;
-    padding-right: 26px
-    ;
+  font-size: 10px;
+  padding-top: 30px;
+  padding-right: 50px;
 }
 
 #main-menu li a span {
-    color: #48CFAD;
+  color: #48CFAD;
 }
 
 #main-menu li a {
-    color: #AAB2BD;
-    font-size: 14px;
+  color: #AAB2BD;
+  font-size: 14px;
 }
 
 #main-menu li a:hover {
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 #main-menu li a span.button {
-    background-color: #48CFAD;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
+  background-color: #48CFAD;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #home-main {
-    background-color: #ffffff;
-    border-radius: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #575757;
 }
 
 
@@ -133,281 +143,282 @@ header.navbar.sticky {
 
 .animated {
   -webkit-animation-duration: 1s;
-	   -moz-animation-duration: 1s;
-	     -o-animation-duration: 1s;
-	        animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	   -moz-animation-fill-mode: both;
-	     -o-animation-fill-mode: both;
-	        animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .animated.hinges {
-	-webkit-animation-duration: 2s;
-	   -moz-animation-duration: 2s;
-	     -o-animation-duration: 2s;
-	        animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .animated.slow {
-	-webkit-animation-duration: 3s;
-	   -moz-animation-duration: 3s;
-	     -o-animation-duration: 3s;
-	        animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
 }
 
 .animated.snail {
-	-webkit-animation-duration: 4s;
-	   -moz-animation-duration: 4s;
-	     -o-animation-duration: 4s;
-	        animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes shake {
-	0%, 100% {-webkit-transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
-	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+  0%, 100% {-webkit-transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
 }
 
 @-moz-keyframes shake {
-	0%, 100% {-moz-transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
-	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+  0%, 100% {-moz-transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
 }
 
 @-o-keyframes shake {
-	0%, 100% {-o-transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
-	20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+  0%, 100% {-o-transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
 }
 
 @keyframes shake {
-	0%, 100% {transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-	20%, 40%, 60%, 80% {transform: translateX(10px);}
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
 .shake {
-	-webkit-animation-name: shake;
-	-moz-animation-name: shake;
-	-o-animation-name: shake;
-	animation-name: shake;
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake;
 }
 
 .login .modal-dialog{
-    width: 350px;
+  width: 350px;
 }
 .login .modal-footer{
-    border-top: 0;
-    margin-top: 0px;
-    padding: 10px 20px 20px;
+  border-top: 0;
+  margin-top: 0px;
+  padding: 10px 20px 20px;
 }
 .login .modal-header {
-    border: 0 none;
-    padding: 15px 15px 15px;
-/*     padding: 11px 15px; */
+  border: 0 none;
+  padding: 15px 15px 15px;
+  /*     padding: 11px 15px; */
 }
 .login .modal-body{
-/*     background-color: #eeeeee; */
+  /*     background-color: #eeeeee; */
 }
 .login .division {
-    float: none;
-    margin: 0 auto 18px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%;
+  float: none;
+  margin: 0 auto 18px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 .login .division .line {
-    border-top: 1px solid #DFDFDF;
-    position: absolute;
-    top: 10px;
-    width: 34%;
+  border-top: 1px solid #DFDFDF;
+  position: absolute;
+  top: 10px;
+  width: 34%;
 }
 .login .division .line.l {
-    left: 0;
+  left: 0;
 }
 .login .division .line.r {
-    right: 0;
+  right: 0;
 }
 .login .division span {
-    color: #424242;
-    font-size: 17px;
+  color: #424242;
+  font-size: 17px;
 }
 .login .box .social {
-    float: none;
-    margin: 0 auto 30px;
-    text-align: center;
+  float: none;
+  margin: 0 auto 30px;
+  text-align: center;
 }
 
 .login .social .circle{
-    background-color: #EEEEEE;
-    color: #FFFFFF;
-    border-radius: 100px;
-    display: inline-block;
-    margin: 0 17px;
-    padding: 15px;
+  background-color: #EEEEEE;
+  color: #FFFFFF;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 0 17px;
+  padding: 15px;
 }
 .login .social .circle .fa{
-    font-size: 16px;
+  font-size: 16px;
 }
 .login .social .facebook{
-    background-color: #455CA8;
-    color: #FFFFFF;
+  background-color: #455CA8;
+  color: #FFFFFF;
 }
 .login .social .google{
-    background-color: #F74933;
+  background-color: #F74933;
 }
 .login .social .github{
-    background-color: #403A3A;
+  background-color: #403A3A;
 }
 .login .facebook:hover{
-    background-color: #6E83CD;
+  background-color: #6E83CD;
 }
 .login .google:hover{
-    background-color: #FF7566;
+  background-color: #FF7566;
 }
 .login .github:hover{
-    background-color: #4D4D4d;;
+  background-color: #4D4D4d;;
 }
 .login .forgot {
-    color: #797979;
-    margin-left: 0;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
+  color: #797979;
+  margin-left: 0;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
 }
 .login .btn-login, .registerBox .btn-register{
-    background-color: #00BBFF;
-    border-color: #00BBFF;
-    border-width: 0;
-    color: #FFFFFF;
-    display: block;
-    margin: 0 auto;
-    padding: 15px 50px;
-    text-transform: uppercase;
-    width: 100%;
+  background-color: #00BBFF;
+  border-color: #00BBFF;
+  border-width: 0;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  width: 100%;
 }
 .login .btn-login:hover, .registerBox .btn-register:hover{
-    background-color: #00A4E4;
-    color: #FFFFFF;
+  background-color: #00A4E4;
+  color: #FFFFFF;
 }
 .login .form-control{
-    border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.09);
-    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
-    color: #FFFFFF;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+  color: #FFFFFF;
 }
 .login .form-control:hover{
-    background-color: rgba(0,0,0,.16);
+  background-color: rgba(0,0,0,.16);
 }
 .login .form-control:focus{
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
-    background-color: rgba(0,0,0,0.23);
-    color: #FFFFFF;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
+  background-color: rgba(0,0,0,0.23);
+  color: #FFFFFF;
 }
 .login .box .form input[type="text"], .login .box .form input[type="password"] {
-    border-radius: 3px;
-    border: none;
-    color: #333333;
-    font-size: 16px;
-    height: 46px;
-    margin-bottom: 5px;
-    padding: 13px 12px;
-    width: 100%;
+  border-radius: 3px;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  height: 46px;
+  margin-bottom: 5px;
+  padding: 13px 12px;
+  width: 100%;
 }
 
 
 @media (max-width:400px){
-    .login .modal-dialog{
-        width: 100%;
-    }
+  .login .modal-dialog{
+    width: 100%;
+  }
 }
 
 .big-login, .big-register{
-    background-color: #00bbff;
-    color: #FFFFFF;
-    border-radius: 7px;
-    border-width: 2px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 200;
-    padding: 16px 60px;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+  background-color: #00bbff;
+  color: #FFFFFF;
+  border-radius: 7px;
+  border-width: 2px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  padding: 16px 60px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
 }
 .big-login:hover{
-    background-color: #00A4E4;
-    color: #FFFFFF;
+  background-color: #00A4E4;
+  color: #FFFFFF;
 }
 .big-register{
-    background-color: rgba(0,0,0,.0);
-    color: #00bbff;
-    border-color: #00bbff;
+  background-color: rgba(0,0,0,.0);
+  color: #00bbff;
+  border-color: #00bbff;
 }
 .big-register:hover{
-    border-color: #00A4E4;
-    color:  #00A4E4;
+  border-color: #00A4E4;
+  color:  #00A4E4;
 }
 h1.headline {
-    font-family: Edo SZ;
-    font-size: 119px;
-    line-height: 96px;
+  font-family: Edo SZ;
+  font-size: 119px;
+  line-height: 96px;
+  opacity: 0.6;
 }
 .home-intro h1.headline {
-    color: #4A89DC;
+  color: #4A89DC;
 }
 .home-mentor h1.headline {
-    color: #FC6E51;
+  color: #FC6E51;
 }
 .white {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .grey {
-    background-color: #4C4C4C;
+  background-color: #4C4C4C;
 }
 
 section {
-    position: relative;
-    padding-top: 60px;
-    padding-right: 0;
-    padding-bottom: 156px;
-    padding-left: 0;
+  position: relative;
+  padding-top: 60px;
+  padding-right: 0;
+  padding-bottom: 156px;
+  padding-left: 0;
 }
 
 section.white .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 20%;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
 }
 
 section.white .overlay h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 80px;
-    width: 140px;
-    height: 4px;
-    margin-left: -70px;
-    background-color: #4C4C4C;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  width: 140px;
+  height: 4px;
+  margin-left: -70px;
+  background-color: #4C4C4C;
 }
 
 section.white .overlay h2 {
-    font-size: 53px;
-    text-transform: uppercase;
-    font-family: Nunito;
-    font-weight: bold;
-    color: #4C4C4C;
-    padding-bottom: 20px;
+  font-size: 53px;
+  text-transform: uppercase;
+  font-family: Nunito Bold;
+  font-weight: bold;
+  color: #4C4C4C;
+  padding-bottom: 50px;
 }
 
 section.white .overlay h4 {
-    font-size: 20px;
-    color: #4C4C4C;
-    line-height: 16px;
+  font-size: 20px;
+  color: #4C4C4C;
+  line-height: 16px;
 }
 
 
@@ -441,83 +452,83 @@ svg:not(:root) {
 }
 
 .home-feature .section-header {
-    position: relative;
-    padding-bottom: 30px;
+  position: relative;
+  padding-bottom: 30px;
 }
 
 .grey {
-    color: #F5F7FA;
+  color: #F5F7FA;
 }
 
 .feature-row {
-    padding-bottom: 26px;
+  padding-bottom: 26px;
 }
 
 .home-feature .section-header h2 {
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 24px;
 }
 
 .home-feature .section-header h4 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .home-feature .section-header h2:after {
-    text-transform: uppercase;
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 38px;
-    width: 140px;
-    height: 4px;
-    margin-left: -60px;
-    background-color: #ffffff;
+  text-transform: uppercase;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 38px;
+  width: 140px;
+  height: 4px;
+  margin-left: -60px;
+  background-color: #ffffff;
 }
 
 .feature-row p span {
-    display: block;
+  display: block;
 }
 
 
 section.home-mentor .section-header, section.home-testimonal .section-header {
-    padding-bottom: 59px;
-    position: relative;
+  padding-bottom: 59px;
+  position: relative;
 }
 
 section.home-mentor .overlay, section.home-testimonal .overlay {
-    height: 75%;
+  height: 75%;
 }
 
 section.home-mentor .group, section.home-testimonal .group {
-    padding-bottom: 22px;
+  padding-bottom: 22px;
 }
 
 section.home-mentor #mentors .mix{
-	display: none;
-      height: 200px;
-    width: 200px;
-    background-color: #000000;
+  display: none;
+  height: 200px;
+  width: 200px;
+  background-color: #000000;
 }
 
 .home-testimonal .section-header h2 {
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 24px;
 }
 
 .home-testimonal .section-header h4 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .home-testimonal .section-header h2:after {
-    text-transform: uppercase;
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 38px;
-    width: 140px;
-    height: 4px;
-    margin-left: -60px;
-    background-color: #ffffff;
+  text-transform: uppercase;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 38px;
+  width: 140px;
+  height: 4px;
+  margin-left: -60px;
+  background-color: #ffffff;
 }

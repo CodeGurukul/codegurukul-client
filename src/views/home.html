@@ -1,0 +1,207 @@
+
+<div class="container wrapper">
+  <div class="row top-menu">
+    <ul class="pull-left">
+      <li><a href="tel:+91809741508"><i class="fa fa-phone"></i><span>+91 8097415085</span></a></li>
+      <li><a href="mailto:info@codegurukul.com"><i class="fa fa-envelope"></i><span>info@codegurukul.com</span></a></li>
+    </ul>
+    <ul ng-show="currentUser" class="pull-right">
+      <li ng-click="logout()" class="logout-link"><a><i class="fa fa-lock"></i><span>Mumbai, In</span></a></li>
+    </ul>
+  </div>
+  <div id="home-main" class="content row">
+    <header role="banner" class="navbar navbar-static-top navbar-sticky white navbar-stuck">
+      <div class="navbar-header">
+        <button data-target=".main-navbar" data-toggle="collapse" data-original-title="" title="" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand brand-logo"><img src="images/logo-small.jpg" alt="Codegurkul"/></a>
+      </div>
+      <nav role="navigation" class="collapse navbar-collapse main-navbar">
+        <div class="main-menu-container">
+          <ul id="main-menu" class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><span>Login</span></a></li>
+            <li></li>
+            <li><a href="#loginModal" data-toggle="modal"><span class="button">Get Started</span></a></li>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="section home-intro white">
+      <div class="container">
+        <header class="section-header text-center underline">
+          <h1 class="headline">Let's</h1>
+          <h1 class="headline">Talk</h1>
+          <h1 class="headline">Code</h1>
+          <div class="overlay">
+            <h2>Codegurukul</h2>
+            <h4>Specializing In Programming Education</h4>
+            <h4>For Careers In The Information Technology Industry</h4>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section class="section home-feature grey">
+      <div class="decor-top">
+        <svg height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg" class="decor">
+          <path d="M0 100 L100 0 L100 100" stroke-width="0"></path>
+        </svg>
+      </div>
+      <div class="container">
+        <header class="section-header text-center underline">
+          <h2>Redefining Learning</h2>
+          <h4>We are All Markers At Heart</h4>
+          <h4>Codegurukul Belives In Proding Foundation & Support</h4>
+          <h4>To Help Grow Idea From Start To Sucess</h4>
+        </header>
+        <div class="feature-row row">
+          <div class="col-md-4 col-xs-offset-2 text-center"><i class="fa fa-users fa-5x"></i>
+            <h3 class="text-center">Mentor</h3>
+            <p class="text-center"><span>Our Mentors Are Professionals</span><span>Working At Major Tech Firm &</span><span>Are Passionate About Both Teaching</span><span>& Your Success</span></p>
+          </div>
+          <div class="col-md-4 text-center"><i class="fa fa-comments fa-5x"></i>
+            <h3 class="text-center">Community</h3>
+            <p class="text-center"><span>Codegurukul Regularly Hosts</span><span>Inspiring & Educational Events</span><span>Featuring The Most Talented</span><span>Professionals Working In The Industry</span></p>
+          </div>
+          <div class="col-md-2 text-center"></div>
+        </div>
+        <div class="feature-row row">
+          <div class="col-md-4 col-xs-offset-2 text-center"><i class="fa fa-moon-o fa-5x"></i>
+            <h3 class="text-center">Night School</h3>
+            <p class="text-center"><span>Learn Programming Skills</span><span>& Keep Your Day Job</span><span>Codegurukul Allows You To Continue</span><span>Learning On Nights & Weekends</span></p>
+          </div>
+          <div class="col-md-4 text-center"><i class="fa fa-code fa-5x"></i>
+            <h3 class="text-center">RealWorld Projects</h3>
+            <p class="text-center"><span>We Setup Codegurukul To Resemble</span><span>A Real Work Environment</span><span>You Will Work In Teams Using</span><span>Agile Methods The Professionals Use</span></p>
+          </div>
+          <div class="col-md-2 text-center"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section home-mentor white">
+      <div class="decor-top">
+        <svg height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg" class="decor">
+          <path d="M0 100 L100 0 L100 100" stroke-width="0"></path>
+        </svg>
+      </div>
+      <div class="container">
+        <header class="section-header text-center underline">
+          <h1 class="headline">BadAss</h1>
+          <h1 class="headline">Mentors</h1>
+          <div class="overlay">
+            <h2>Expert Teachers</h2>
+            <h4>Our Mentors Are Seasoned Solution Architects</h4>
+            <h4>With Years Of Real World Enterprise Expereince</h4>
+          </div>
+        </header>
+        <div id="mentors">
+          <div class="group text-center"><span data-filter="all" class="btn filter">All</span><span data-filter=".html5" class="btn filter">HTML5</span><span data-filter=".css3" class="btn filter">CSS3</span><span data-filter=".nodejs" class="btn filter">Nodejs</span><span data-filter=".scrum" class="btn filter">Scrum</span><span data-filter=".aws" class="btn filter">AWS</span><span data-filter=".ruby-on-rails" class="btn filter">Ruby on Rails</span><span data-filter=".ios" class="btn filter">IOS</span></div>
+          <div class="group text-center">
+            <div data-myorder="1" class="mix javascript"></div>
+            <div data-myorder="6" class="mix nodejs"></div>
+            <div data-myorder="3" class="mix aws"></div>
+            <div data-myorder="2" class="mix ruby-on-rails"></div>
+            <div data-myorder="4" class="mix ios"></div>
+            <div data-myorder="5" class="mix html5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section home-testimonal grey">
+      <div class="decor-top">
+        <svg height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg" class="decor">
+          <path d="M0 100 L100 0 L100 100" stroke-width="0"></path>
+        </svg>
+      </div>
+      <div class="container">
+        <header class="section-header text-center underline">
+          <h2>Testimonals</h2>
+          <h4>We are All Markers At Heart</h4>
+          <h4>Codegurukul Belives In Proding Foundation & Support</h4>
+          <h4>To Help Grow Idea From Start To Sucess</h4>
+        </header>
+      </div>
+    </section>
+    <section class="section home-course white">
+      <div class="decor-top">
+        <svg height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg" class="decor">
+          <path d="M0 100 L100 0 L100 100" stroke-width="0"></path>
+        </svg>
+      </div>
+      <div class="container">
+        <header class="section-header text-center underline">
+          <h1 class="headline">Rockstar</h1>
+          <h1 class="headline">Programs</h1>
+          <div class="overlay">
+            <h2>Popular Courses</h2>
+            <h4>Our Mentors Are Seasoned Solution Architects</h4>
+            <h4>With Years Of Real World Enterprise Expereince</h4>
+          </div>
+        </header>
+        <div class="programs row">
+          <div class="col-md-4 text-center"></div>
+          <div class="col-md-4 text-center"></div>
+          <div class="col-md-4 text-center"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section home-footer grey">
+      <div class="decor-top">
+        <svg height="100%" preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg" class="decor">
+          <path d="M0 0 L50 100 L100 0 L100 100 L0 100" stroke-width="0"></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="footer row">
+          <div class="col-md-12 text-center"><i class="fa fa-facebook-square fa-3x"></i><i class="fa fa-twitter-square fa-3x"></i><i class="fa fa-github-square fa-3x"></i></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div id="loginModal" class="modal fade login">
+  <div class="modal-dialog login animated">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+        <h4 class="modal-title">Login with</h4>
+      </div>
+      <div class="modal-body">
+        <div class="box">
+          <div class="content">
+            <div class="social"><a href="/auth/github" class="circle github"><i class="fa fa-github fa-fw"></i></a><a id="google_login" href="/auth/google_oauth2" class="circle google"><i class="fa fa-google-plus fa-fw"></i></a><a id="facebook_login" href="/auth/facebook" class="circle facebook"><i class="fa fa-facebook fa-fw"></i></a></div>
+            <div class="division">
+              <div class="line l"></div><span>or</span>
+              <div class="line r"></div>
+            </div>
+            <div class="error"></div>
+            <div class="form loginBox">
+              <form method="post" action="/login" accept-charset="UTF-8">
+                <input id="email" type="text" placeholder="Email" name="email" class="form-control"/>
+                <input id="password" type="password" placeholder="Password" name="password" class="form-control"/>
+                <input type="button" value="Login" onclick="loginAjax()" class="btn btn-default btn-login"/>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div style="display:none;" class="content registerBox">
+            <div class="form">
+              <form method="post" html="{:multipart=&gt;true}" data-remote="true" action="/register" accept-charset="UTF-8">
+                <input id="email" type="text" placeholder="Email" name="email" class="form-control"/>
+                <input id="password" type="password" placeholder="Password" name="password" class="form-control"/>
+                <input id="password_confirmation" type="password" placeholder="Repeat Password" name="password_confirmation" class="form-control"/>
+                <input type="submit" value="Create account" name="commit" class="btn btn-default btn-register"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="forgot login-footer"><span>Looking to <a href="javascript: showRegisterForm();">create an account</a>                            ?</span></div>
+        <div style="display:none" class="forgot register-footer"><span>Already have an account?</span><a href="javascript: showLoginForm();">Login</a></div>
+      </div>
+    </div>
+  </div>
+</div>

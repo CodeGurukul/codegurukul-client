@@ -11,6 +11,8 @@ var jade = require('jade');
 var gulpJade = require('gulp-jade');
 var katex = require('katex');
 
+var webserver = require('gulp-webserver');
+
 var templateCache = require('gulp-angular-templatecache');
 
 jade.filters.katex = katex.renderToString;
@@ -45,6 +47,15 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('webserver', function() {
+  gulp.src('/')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: true
+    }));
+});
+
 gulp.task('templates', function() {
   gulp.src('src/views/**/*.html')
     .pipe(templateCache({ root: 'views', module: 'MyApp' }))
@@ -60,12 +71,6 @@ gulp.task('jade', function () {
     .pipe(gulp.dest('src/views'))
 })
 
-gulp.task('develop', function () {
-  nodemon({ script: 'server.js' })
-    .on('restart', function () {
-      console.log('restarting server')
-    })
-})
 
 gulp.task('watch', function() {
   gulp.watch('stylesheets/*.scss', ['sass']);
@@ -74,4 +79,4 @@ gulp.task('watch', function() {
   gulp.watch(['src/**/*.js', '!dist/app.min.js', '!dist/templates.js'], ['compress']);
 });
 
-gulp.task('default', ['sass', 'jade', 'compress', 'templates', 'develop', 'watch']);
+gulp.task('default', ['sass', 'jade', 'compress', 'templates', 'webserver', 'watch']);
