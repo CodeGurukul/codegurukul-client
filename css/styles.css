@@ -144,12 +144,18 @@ header.navbar.sticky {
 }
 
 .contact-link {
-  padding-right: 20px;
+  padding-right: 0px;
+  margin-right: 22px;
 }
 
 .nav-links>li>a{
-    padding: 10px 20px;
+     padding: 10px 8px;
 }
+
+#main-menu li:last-child a {
+    margin-right: 5px;
+}
+
 
 .arrows{
   padding-top: 50px;
@@ -403,12 +409,19 @@ div.overlay img {
 .home-mentor h1.headline {
   color: #FC6E51;
 }
+span.btn.filter {
+    border-radius: 20px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .white {
   background-color: #ffffff;
 }
 
 .grey {
-  background-color: #4C4C4C;
+  background-color: #aab2bd;
 }
 
 section {
