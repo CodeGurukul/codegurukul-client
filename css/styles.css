@@ -385,6 +385,22 @@ header.navbar.sticky {
 h1.headline {
   font-family: Edo SZ;
   opacity: 0.6;
+  font-size: 72px;
+  line-height: 90px;
+}
+h1.headline.big{
+  font-size: 110px;
+  line-height: 34px;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-feature h1.headline{
+  color: #37bc9b;
 }
 
 .section.home-intro.white h1.headline {
@@ -422,6 +438,7 @@ span.btn.filter {
 
 .grey {
   background-color: #aab2bd;
+    color: #FFFFFF;
 }
 
 section {
@@ -501,10 +518,6 @@ svg:not(:root) {
   padding-bottom: 30px;
 }
 
-.grey {
-  color: #F5F7FA;
-}
-
 .feature-row {
   padding-bottom: 26px;
 }
@@ -513,6 +526,7 @@ svg:not(:root) {
   text-transform: uppercase;
   padding-bottom: 20px;
   font-size: 24px;
+  font-weight: bold;
 }
 
 .home-feature .section-header h4 {
