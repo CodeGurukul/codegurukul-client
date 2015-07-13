@@ -609,3 +609,17 @@ background-size: cover;
   font-weight: 800;
   font-size: -webkit-xxx-large;
 }
+
+.tabs{
+/*  display: inline;*/
+  margin: auto 0px;
+}
+
+.top-border{
+  border-top: 4px solid #fff;
+  padding-top: 20px;
+}
+
+.top-border.selected{
+  border-top: 4px solid #36BC9B;
+}
