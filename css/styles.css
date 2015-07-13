@@ -127,9 +127,9 @@ header.navbar.sticky {
   background-color: #48CFAD;
   color: #fff;
   padding-top: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-bottom: 5px;
-  padding-right: 10px;
+  padding-right: 15px;
   border-radius: 15px;
 }
 
@@ -149,6 +149,10 @@ header.navbar.sticky {
 
 .nav-links>li>a{
     padding: 10px 20px;
+}
+
+.arrows{
+  padding-top: 50px;
 }
 
 /*  Shake animation  */
@@ -374,10 +378,25 @@ header.navbar.sticky {
 }
 h1.headline {
   font-family: Edo SZ;
-  font-size: 119px;
-  line-height: 96px;
   opacity: 0.6;
 }
+
+.section.home-intro.white h1.headline {
+    font-size: 124px;
+    line-height: 80px;
+    color: #4fc1e9;
+}
+
+div.overlay h4 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+div.overlay img {
+    margin-top: 30px;
+}
+
 .home-intro h1.headline {
   color: #4A89DC;
 }
