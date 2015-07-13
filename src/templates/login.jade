@@ -1,0 +1,27 @@
+.box
+  .content
+    .social
+      a.circle.github(href='/auth/github')
+        i.fa.fa-github.fa-fw
+      a#google_login.circle.google(ng-click='googleLogin()')
+        i.fa.fa-google-plus.fa-fw
+      a#facebook_login.circle.facebook(ng-click='facebookLogin()')
+        i.fa.fa-facebook.fa-fw
+    .division
+      .line.l
+      span or
+      .line.r
+    .error
+    .form.loginBox
+      form.ng-pristine.ng-valid(method='post', action='/login', accept-charset='UTF-8')
+        input#email.form-control(type='text', placeholder='Email', name='email')
+        input#password.form-control(type='password', placeholder='Password', name='password')
+        input.btn.btn-default.btn-login(type='button', value='Login', onclick='loginAjax()')
+.box
+  .content.registerBox(style='display:none;')
+    .form
+      form.ng-pristine.ng-valid(method='post', html='{:multipart=>true}', data-remote='true', action='/register', accept-charset='UTF-8')
+        input#email.form-control(type='text', placeholder='Email', name='email')
+        input#password.form-control(type='password', placeholder='Password', name='password')
+        input#password_confirmation.form-control(type='password', placeholder='Repeat Password', name='password_confirmation')
+        input.btn.btn-default.btn-register(type='submit', value='Create account', name='commit')

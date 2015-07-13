@@ -30,6 +30,7 @@
     "gulp-sass": "^1.2.4",
     "gulp-uglify": "^0.3.0",
     "gulp-webserver": "^0.9.1",
+    "jade": "^1.11.0",
     "karma": "^0.12.19",
     "karma-chrome-launcher": "^0.1.4",
     "karma-jasmine": "^0.1.5",

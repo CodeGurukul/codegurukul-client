@@ -1,4 +1,4 @@
-angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'ngSanitize'])
+angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'mgcrea.ngStrap', 'ngSanitize', 'ng-token-auth'])
   .config(function ($urlRouterProvider, $stateProvider, $locationProvider) {
 
   $urlRouterProvider.otherwise('/');
@@ -9,23 +9,57 @@ angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', '
     templateUrl: 'src/views/home.html'
 //    controller: 'ProgramCtrl'
   })
+  $stateProvider
+    .state('login', {
+    url: '/login',
+    templateUrl: 'src/views/login.html',
+    controller: 'LoginCtrl'
+  })
 })
+.config(function($authProvider) {
 
-  .config(function ($httpProvider) {
-  $httpProvider.interceptors.push(function ($rootScope, $q, $window, $location) {
-    return {
-      request: function(config) {
-        if ($window.localStorage.token) {
-          config.headers.Authorization = $window.localStorage.token;
-        }
-        return config;
+    // the following shows the default values. values passed to this method
+    // will extend the defaults using angular.extend
+
+    $authProvider.configure({
+      apiUrl:                  '/api',
+      tokenValidationPath:     '/auth/validate_token',
+      signOutUrl:              '/auth/sign_out',
+      emailRegistrationPath:   '/auth',
+      accountUpdatePath:       '/auth',
+      accountDeletePath:       '/auth',
+      confirmationSuccessUrl:  window.location.href,
+      passwordResetPath:       '/auth/password',
+      passwordUpdatePath:      '/auth/password',
+      passwordResetSuccessUrl: window.location.href,
+      emailSignInPath:         '/auth/sign_in',
+      storage:                 'cookies',
+      proxyIf:                 function() { return false; },
+      proxyUrl:                '/proxy',
+      authProviderPaths: {
+        github:   '/api/auth/github',
+        facebook: '/api/auth/facebook',
+        google:   '/api/auth/google'
       },
-      responseError: function(response) {
-        if (response.status === 404) {
-          $location.path('home');
-        }
-        return $q.reject(response);
+      tokenFormat: {
+        "access-token": "{{ token }}",
+        "token-type":   "Bearer",
+        "client":       "{{ clientId }}",
+        "expiry":       "{{ expiry }}",
+        "uid":          "{{ uid }}"
+      },
+      parseExpiry: function(headers) {
+        // convert from UTC ruby (seconds) to UTC js (milliseconds)
+        return (parseInt(headers['expiry']) * 1000) || null;
+      },
+      handleLoginResponse: function(response) {
+        return response.data;
+      },
+      handleAccountResponse: function(response) {
+        return response.data;
+      },
+      handleTokenValidationResponse: function(response) {
+        return response.data;
       }
-    }
+    });
   });
-});
