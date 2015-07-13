@@ -1,0 +1,79 @@
+.container.wrapper
+  .row.top-menu
+    ul.pull-left
+      li
+        a(href='tel:+91809741508')
+          i.fa.fa-phone
+          span +91 8097415085
+      li
+        a(href='mailto:info@codegurukul.com')
+          i.fa.fa-envelope
+          span info@codegurukul.com
+    ul.pull-right(ng-show='currentUser')
+      li.logout-link(ng-click='logout()')
+        a
+          i.fa.fa-lock
+          span Mumbai, In
+  #home-main.content.row
+    header.navbar.navbar-static-top.navbar-sticky.white.navbar-stuck(role='banner')
+      .navbar-header
+        button.navbar-toggle.collapsed(data-target='.main-navbar', data-toggle='collapse', data-original-title='', title='')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.brand-logo(href='/')
+          img(src='images/logo.png', alt='Codegurkul')
+      nav.collapse.navbar-collapse.main-navbar(role='navigation')
+        .main-menu-container
+          ul#main-menu.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Home
+            li
+              a(href='#') Program
+            li
+              a(href='#') Contact
+            li
+              a(href='#')
+                span Login
+            li
+            li
+              a(href='#loginModal', data-toggle='modal')
+                span.button Get Started
+
+    section.program-header
+      div.row
+        div.col-sm-12.image-underlay
+          img(src='images/gmail-clone.png', width='100%')
+        div.col-sm-12.text-center.image-text-overlay
+          h1 Angular Workshop
+          p
+            em - Working the Angular way
+            
+    section.program-highlight-section
+      div.row
+        div.col-sm-6.highlights
+          h3 Course Highlights:
+          ul
+            li 
+              h4 Highlight #1
+              p Some description of Highlight #1
+            li 
+              h4 Highlight #1
+              p Some description of Highlight #1
+            li 
+              h4 Highlight #1
+              p Some description of Highlight #1
+            li 
+              h4 Highlight #1
+              p Some description of Highlight #1
+            li 
+              h4 Highlight #1
+              p Some description of Highlight #1
+            li 
+              h4 Highlight #1
+              p Some description of Highlight #1
+            li Highlight #2
+            li Highlight #3
+            li Highlight #4
+            li Highlight #5
+        div.col-sm-6.targets

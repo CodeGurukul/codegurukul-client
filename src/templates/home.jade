@@ -22,20 +22,19 @@
           span.icon-bar
           span.icon-bar
         a.navbar-brand.brand-logo(href='/')
-          img(src='images/logo-small.jpg', alt='Codegurkul')
+          img(src='images/logo.png', alt='Codegurkul')
       nav.collapse.navbar-collapse.main-navbar(role='navigation')
         .main-menu-container
-          ul#main-menu.nav.navbar-nav.navbar-right
-            li
-              a(href='#') Home
-            li
+          ul#main-menu.nav.navbar-nav.navbar-right.nav-links
+            li.about-link
+              a(href='#') About
+            li.program-link
               a(href='#') Program
-            li
+            li.contact-link
               a(href='#') Contact
-            li
+            li.login-link
               a(href='#')
                 span Login
-            li
             li
               a(href='#loginModal', data-toggle='modal')
                 span.button Get Started

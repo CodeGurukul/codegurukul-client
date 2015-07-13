@@ -15,6 +15,12 @@ angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', '
     templateUrl: 'src/views/login.html',
     controller: 'LoginCtrl'
   })
+  $stateProvider
+    .state('angular-workshop', {
+    url: '/angular-workshop',
+    templateUrl: 'src/views/angular-workshop.html',
+    controller: 'LoginCtrl'
+  })
 })
 .config(function($authProvider) {
 

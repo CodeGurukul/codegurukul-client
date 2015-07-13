@@ -1,27 +1,117 @@
-.box
-  .content
-    .social
-      a.circle.github(href='/auth/github')
-        i.fa.fa-github.fa-fw
-      a#google_login.circle.google(ng-click='googleLogin()')
-        i.fa.fa-google-plus.fa-fw
-      a#facebook_login.circle.facebook(ng-click='facebookLogin()')
-        i.fa.fa-facebook.fa-fw
-    .division
-      .line.l
-      span or
-      .line.r
-    .error
-    .form.loginBox
-      form.ng-pristine.ng-valid(method='post', action='/login', accept-charset='UTF-8')
-        input#email.form-control(type='text', placeholder='Email', name='email')
-        input#password.form-control(type='password', placeholder='Password', name='password')
-        input.btn.btn-default.btn-login(type='button', value='Login', onclick='loginAjax()')
-.box
-  .content.registerBox(style='display:none;')
-    .form
-      form.ng-pristine.ng-valid(method='post', html='{:multipart=>true}', data-remote='true', action='/register', accept-charset='UTF-8')
-        input#email.form-control(type='text', placeholder='Email', name='email')
-        input#password.form-control(type='password', placeholder='Password', name='password')
-        input#password_confirmation.form-control(type='password', placeholder='Repeat Password', name='password_confirmation')
-        input.btn.btn-default.btn-register(type='submit', value='Create account', name='commit')
+//.box
+//  .content
+//    .social
+//      a.circle.github(href='/auth/github')
+//        i.fa.fa-github.fa-fw
+//      a#google_login.circle.google(ng-click='googleLogin()')
+//        i.fa.fa-google-plus.fa-fw
+//      a#facebook_login.circle.facebook(ng-click='facebookLogin()')
+//        i.fa.fa-facebook.fa-fw
+//    .division
+//      .line.l
+//      span or
+//      .line.r
+//    .error
+//    .form.loginBox
+//      form.ng-pristine.ng-valid(method='post', action='/login', accept-charset='UTF-8')
+//        input#email.form-control(type='text', placeholder='Email', name='email')
+//        input#password.form-control(type='password', placeholder='Password', name='password')
+//        input.btn.btn-default.btn-login(type='button', value='Login', onclick='loginAjax()')
+//.box
+//  .content.registerBox(style='display:none;')
+//    .form
+//      form.ng-pristine.ng-valid(method='post', html='{:multipart=>true}', data-remote='true', action='/register', accept-charset='UTF-8')
+//        input#email.form-control(type='text', placeholder='Email', name='email')
+//        input#password.form-control(type='password', placeholder='Password', name='password')
+//        input#password_confirmation.form-control(type='password', placeholder='Repeat Password', name='password_confirmation')
+//        input.btn.btn-default.btn-register(type='submit', value='Create account', name='commit')
+
+.container.wrapper
+  .row.top-menu
+    ul.pull-left
+      li
+        a(href='tel:+91809741508')
+          i.fa.fa-phone
+          span +91 8097415085
+      li
+        a(href='mailto:info@codegurukul.com')
+          i.fa.fa-envelope
+          span info@codegurukul.com
+    ul.pull-right(ng-show='currentUser')
+      li.logout-link(ng-click='logout()')
+        a
+          i.fa.fa-lock
+          span Mumbai, In
+  #home-main.content.row
+    header.navbar.navbar-static-top.navbar-sticky.white.navbar-stuck(role='banner')
+      .navbar-header
+        button.navbar-toggle.collapsed(data-target='.main-navbar', data-toggle='collapse', data-original-title='', title='')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.brand-logo(href='/')
+          img(src='images/logo-small.jpg', alt='Codegurkul')
+      nav.collapse.navbar-collapse.main-navbar(role='navigation')
+        .main-menu-container
+          ul#main-menu.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Home
+            li
+              a(href='#') Program
+            li
+              a(href='#') Contact
+            li
+              a(href='#')
+                span Login
+            li
+            li
+              a(href='#loginModal', data-toggle='modal')
+                span.button Get Started
+            li
+    section.login-section
+      .container
+        .col-md-12.text-center
+          h2 Welcome to CodeGurukul!
+        .col-md-12
+          hr
+        .row
+          .col-sm-6.login
+            fieldset
+              legend
+                small Returning back? Login here!
+              .modal-body
+                .box
+                  .content
+                    .form.loginBox
+                      form.ng-pristine.ng-valid(method='post', action='/login', accept-charset='UTF-8')
+                        input#email.form-control(type='text', placeholder='Email', name='email')
+                        input#password.form-control(type='password', placeholder='Password', name='password')
+                        input.btn.btn-default.btn-login.login-button(type='button', value='Login', onclick='loginAjax()')
+                    .division
+                      .line.l
+                      span or
+                      .line.r
+                    .social
+                      a.circle.github(href='/auth/github')
+                        i.fa.fa-github.fa-fw
+                      a#google_login.circle.google(href='/auth/google_oauth2')
+                        i.fa.fa-google-plus.fa-fw
+                      a#facebook_login.circle.facebook(href='/auth/facebook')
+                        i.fa.fa-facebook.fa-fw
+          .col-sm-6.login
+            fieldset
+              legend
+                small New at CodeGurukul? Signup here!
+              .modal-body
+                .box
+                  .content
+                    .form.loginBox
+                      form.ng-pristine.ng-valid(method='post', action='/login', accept-charset='UTF-8')
+                        input#email.form-control(type='text', placeholder='Email', name='email')
+                        input#password.form-control(type='password', placeholder='Password', name='password')
+                        input#password.form-control(type='password', placeholder='Confirm Password', name='password')
+                        input.btn.btn-default.btn-login(type='button', value='Signup', onclick='loginAjax()')
+        .row
+          .col-md-12
+            hr
+

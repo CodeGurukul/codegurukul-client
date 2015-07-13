@@ -65,7 +65,7 @@ header.navbar {
 }
 
 .navbar-brand>img {
-  height: 50px;
+/*  height: 50px;*/
 }
 
 .brand-logo{
@@ -107,7 +107,7 @@ header.navbar.sticky {
 .main-menu-container {
   font-size: 10px;
   padding-top: 30px;
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 #main-menu li a span {
@@ -116,7 +116,7 @@ header.navbar.sticky {
 
 #main-menu li a {
   color: #AAB2BD;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 #main-menu li a:hover {
@@ -126,8 +126,11 @@ header.navbar.sticky {
 #main-menu li a span.button {
   background-color: #48CFAD;
   color: #fff;
-  padding: 5px;
-  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  border-radius: 15px;
 }
 
 #home-main {
@@ -136,7 +139,17 @@ header.navbar.sticky {
   box-shadow: 0px 0px 20px #575757;
 }
 
+.about-link, .program-link, .login-link, .contact-link{
+  padding-right: 0px;
+}
 
+.contact-link {
+  padding-right: 40px;
+}
+
+.nav-links>li>a{
+    padding: 10px 20px;
+}
 
 /*  Shake animation  */
 
@@ -381,9 +394,9 @@ h1.headline {
 
 section {
   position: relative;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-right: 0;
-  padding-bottom: 156px;
+  padding-bottom: 80px;
   padding-left: 0;
 }
 
@@ -531,4 +544,53 @@ section.home-mentor #mentors .mix{
   height: 4px;
   margin-left: -60px;
   background-color: #ffffff;
+}
+
+legend{
+  width: inherit;
+  padding: 5px;
+  border-bottom: 0px;
+}
+
+fieldset{
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+}
+
+.login-button{
+  margin-bottom: 20px !important;
+}
+
+.login-section{
+  background-color: white;
+}
+
+/*
+.program-section1{
+background-image: url(../images/gmail-clone.png);
+opacity: 0.7;
+background-repeat: no-repeat;
+background-size: cover;
+}*/
+
+.program-header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-underlay{
+  opacity: 0.5;
+}
+
+.image-text-overlay{
+  position: absolute;
+  bottom: 35%;
+}
+
+.image-text-overlay h1{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: -webkit-xxx-large;
 }
