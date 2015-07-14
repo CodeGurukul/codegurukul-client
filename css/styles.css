@@ -623,3 +623,18 @@ background-size: cover;
 .top-border.selected{
   border-top: 4px solid #36BC9B;
 }
+
+.custom-padding-left-right-75{
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.slick-dots li button:before{
+  content: '-';
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #36BC9B;
+}

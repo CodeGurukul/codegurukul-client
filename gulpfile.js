@@ -34,6 +34,8 @@ gulp.task('compress', function() {
     'vendor/bootstrap/dist/js/bootstrap.min.js',
     'vendor/jquery.easing/js/jquery.easing.min.js', 
     'vendor/mixitup/build/jquery.mixitup.min.js',
+    'vendor/angular-slick/dist/slick.min.js',
+    'vendor/slick-carousel/slick/slick.min.js',
     'js/*.js',
     'src/app.js',
     'src/services/*.js',

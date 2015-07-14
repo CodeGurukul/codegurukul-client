@@ -37,6 +37,7 @@
     "angular-resource": "~1.4.2",
     "angular-sanitize": "~1.4.2",
     "angular-strap": "~2.2.4",
-    "ng-token-auth": "~0.0.25"
+    "ng-token-auth": "~0.0.25",
+    "angular-slick": "~0.2.1"
   }
 }
