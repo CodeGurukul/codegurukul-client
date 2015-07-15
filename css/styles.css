@@ -530,3 +530,7 @@ section.home-mentor #mentors .mix{
   background-size: cover;
 }
 /*** End of Contact ***/
+
+.custom-margin-bottom-15{
+  margin-bottom: 15px;
+}
