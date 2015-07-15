@@ -227,171 +227,19 @@ header.navbar.sticky {
   animation-name: shake;
 }
 
-.login .modal-dialog{
-  width: 350px;
-}
-.login .modal-footer{
-  border-top: 0;
-  margin-top: 0px;
-  padding: 10px 20px 20px;
-}
-.login .modal-header {
-  border: 0 none;
-  padding: 15px 15px 15px;
-  /*     padding: 11px 15px; */
-}
-.login .modal-body{
-  /*     background-color: #eeeeee; */
-}
-.login .division {
-  float: none;
-  margin: 0 auto 18px;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-.login .division .line {
-  border-top: 1px solid #DFDFDF;
-  position: absolute;
-  top: 10px;
-  width: 34%;
-}
-.login .division .line.l {
-  left: 0;
-}
-.login .division .line.r {
-  right: 0;
-}
-.login .division span {
-  color: #424242;
-  font-size: 17px;
-}
-.login .box .social {
-  float: none;
-  margin: 0 auto 30px;
-  text-align: center;
-}
 
-.login .social .circle{
-  background-color: #EEEEEE;
-  color: #FFFFFF;
-  border-radius: 100px;
-  display: inline-block;
-  margin: 0 17px;
-  padding: 15px;
-}
-.login .social .circle .fa{
-  font-size: 16px;
-}
-.login .social .facebook{
-  background-color: #455CA8;
-  color: #FFFFFF;
-}
-.login .social .google{
-  background-color: #F74933;
-}
-.login .social .github{
-  background-color: #403A3A;
-}
-.login .facebook:hover{
-  background-color: #6E83CD;
-}
-.login .google:hover{
-  background-color: #FF7566;
-}
-.login .github:hover{
-  background-color: #4D4D4d;;
-}
-.login .forgot {
-  color: #797979;
-  margin-left: 0;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-}
-.login .btn-login, .registerBox .btn-register{
-  background-color: #00BBFF;
-  border-color: #00BBFF;
-  border-width: 0;
-  color: #FFFFFF;
-  display: block;
-  margin: 0 auto;
-  padding: 15px 50px;
-  text-transform: uppercase;
-  width: 100%;
-}
-.login .btn-login:hover, .registerBox .btn-register:hover{
-  background-color: #00A4E4;
-  color: #FFFFFF;
-}
-.login .form-control{
-  border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.09);
-  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
-  color: #FFFFFF;
-}
-.login .form-control:hover{
-  background-color: rgba(0,0,0,.16);
-}
-.login .form-control:focus{
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
-  background-color: rgba(0,0,0,0.23);
-  color: #FFFFFF;
-}
-.login .box .form input[type="text"], .login .box .form input[type="password"] {
-  border-radius: 3px;
-  border: none;
-  color: #333333;
-  font-size: 16px;
-  height: 46px;
-  margin-bottom: 5px;
-  padding: 13px 12px;
-  width: 100%;
-}
-
-
-@media (max-width:400px){
-  .login .modal-dialog{
-    width: 100%;
-  }
-}
-
-.big-login, .big-register{
-  background-color: #00bbff;
-  color: #FFFFFF;
-  border-radius: 7px;
-  border-width: 2px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 200;
-  padding: 16px 60px;
-  text-transform: uppercase;
-  transition: all 0.3s ease 0s;
-}
-.big-login:hover{
-  background-color: #00A4E4;
-  color: #FFFFFF;
-}
-.big-register{
-  background-color: rgba(0,0,0,.0);
-  color: #00bbff;
-  border-color: #00bbff;
-}
-.big-register:hover{
-  border-color: #00A4E4;
-  color:  #00A4E4;
-}
 h1.headline {
   font-family: Edo SZ;
   opacity: 0.6;
   font-size: 72px;
   line-height: 90px;
 }
+
 h1.headline.big{
   font-size: 110px;
   line-height: 34px;
 }
+
 .overlay {
   position: absolute;
     top: 8px;
@@ -399,11 +247,12 @@ h1.headline.big{
   margin-left: auto;
   margin-right: auto;
 }
-.home-feature h1.headline, .home-mentor h1.headline{
+
+h1.headline {
   color: #37bc9b;
 }
 
-.section.home-intro.white h1.headline {
+.home-intro h1.headline {
     font-size: 124px;
     line-height: 80px;
     color: #4fc1e9;
@@ -422,9 +271,11 @@ div.overlay img {
 .home-intro h1.headline {
   color: #4A89DC;
 }
+
 .home-mentor h1.headline {
   color: #FC6E51;
 }
+
 span.btn.filter {
     border-radius: 20px;
     margin-right: 10px;
@@ -449,6 +300,9 @@ section {
   padding-left: 0;
 }
 
+section .overlay {
+  height: 75%;
+}
 
 [class*=decor-]{
   position: absolute;
@@ -479,16 +333,17 @@ svg:not(:root) {
   margin: 0 auto;
 }
 
-.home-feature .section-header, .home-mentor .section-header {
+.section .section-header {
   position: relative;
   padding-bottom: 30px;
+  min-height: 120px;
 }
 
 .feature-row {
   padding-bottom: 26px;
 }
 
-.home-feature .section-header h2, .home-mentor .section-header h2 {
+.section-header h2 {
   text-transform: uppercase;
   padding-bottom: 20px;
   font-size: 24px;
@@ -496,13 +351,13 @@ svg:not(:root) {
   margin-bottom: 30px;
 }
 
-.home-feature .section-header h4, .home-mentor .section-header h4 {
+.section-header h4 {
   font-size: 16px;
   text-transform: capitalize;
   line-height: 11px;
 }
 
-.home-feature .section-header h2:after, .home-mentor .section-header h2:after {
+.section-header h2:after {
   text-transform: uppercase;
   content: "";
   position: absolute;
@@ -512,10 +367,11 @@ svg:not(:root) {
   height: 3px;
   margin-left: -60px;
 }
-.home-feature .section-header h2:after {
+
+.grey .section-header h2:after {
   background-color: #ffffff;
 }
-.home-mentor .section-header h2:after {
+.white .section-header h2:after {
   background-color: #4c4c4c;
 }
 
@@ -523,12 +379,7 @@ svg:not(:root) {
   display: block;
 }
 
-
-section.home-mentor .overlay, section.home-testimonal .overlay {
-  height: 75%;
-}
-
-section.home-mentor .group, section.home-testimonal .group {
+section.home-mentor .group {
   padding-bottom: 22px;
 }
 
@@ -539,57 +390,18 @@ section.home-mentor #mentors .mix{
   background-color: #000000;
 }
 
-.home-testimonal .section-header h2 {
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  font-size: 24px;
+.company-row img {
+    width: 112px;
 }
 
-.home-testimonal .section-header h4 {
-  font-size: 16px;
+.company-row ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.home-testimonal .section-header h2:after {
-  text-transform: uppercase;
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 38px;
-  width: 140px;
-  height: 4px;
-  margin-left: -60px;
-  background-color: #ffffff;
-}
-
-legend{
-  width: inherit;
-  padding: 5px;
-  border-bottom: 0px;
-}
-
-fieldset{
-  border: 1px solid #e8e8e8;
-  border-radius: 5px;
-  padding: .35em .625em .75em;
-  margin: 0 2px;
-}
-
-.login-button{
-  margin-bottom: 20px !important;
-}
-
-.login-section{
-  background-color: white;
-}
-
-/*
-.program-section1{
-background-image: url(../images/gmail-clone.png);
-opacity: 0.7;
-background-repeat: no-repeat;
-background-size: cover;
-}*/
-
+/*** Start of Unknown CSS ***/
 .program-header{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -638,3 +450,70 @@ background-size: cover;
 .slick-dots li.slick-active button:before {
   color: #36BC9B;
 }
+
+/*** End of Unknown CSS ***/
+
+
+
+/*** Start of Testimonal ***/
+.testimonial-row {
+    position: relative;
+    height: 150px;
+}
+
+.testimonial-row label {
+    left: 0px;
+    color: #000000;
+    background-color: #9e5f9e;
+    width: 29%;
+    height: 3px;
+    cursor: pointer;
+}
+
+.testimonial-row input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    /* Setting this to 0 make it invisible for VoiceOver */
+    height: 1px;
+    /* Setting this to 0 make it invisible for VoiceOver */
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.testimonial-row .slide {
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.6s ease-in;
+}
+
+#first:checked ~ div.one {
+    left: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+#second:checked ~ div.two {
+    left: 0;
+    opacity: 1;
+   width: 100%;
+}
+
+#third:checked ~ div.three {
+    left: 0;
+    opacity: 1;
+  width: 100%;
+}
+
+/*** End of Testimonal ***/
+
+/*** Start of Contact ***/
+
+.bg-map {
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=Adarash+Nagar,Andheri+West&scale=2&size=500x500");
+  background-size: cover;
+}
+/*** End of Contact ***/
