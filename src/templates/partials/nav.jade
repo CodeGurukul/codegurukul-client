@@ -1,0 +1,23 @@
+header.navbar.navbar-static-top.navbar-sticky.white.navbar-stuck(role='banner')
+  .navbar-header
+    button.navbar-toggle.collapsed(data-target='.main-navbar', data-toggle='collapse', data-original-title='', title='')
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.navbar-brand.brand-logo(href='/')
+      img(src='images/logo.png', alt='Codegurkul')
+  nav.collapse.navbar-collapse.main-navbar(role='navigation')
+    .main-menu-container
+      ul#main-menu.nav.navbar-nav.navbar-right.nav-links
+        li.about-link
+          a(href='#') About
+        li.program-link
+          a(href='#') Program
+        li.contact-link
+          a(href='#') Contact
+        li.login-link
+          a(href='#')
+            span Login
+        li
+          a(href='#loginModal', data-toggle='modal')
+            span.button Get Started

@@ -1,4 +1,4 @@
-angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'mgcrea.ngStrap', 'ngSanitize', 'ng-token-auth'])
+angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'mgcrea.ngStrap', 'ngSanitize', 'ng-token-auth', 'slick'])
   .config(function ($urlRouterProvider, $stateProvider, $locationProvider) {
 
   $urlRouterProvider.otherwise('/');
@@ -19,6 +19,12 @@ angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', '
     .state('angular-workshop', {
     url: '/angular-workshop',
     templateUrl: 'src/views/angular-workshop.html',
+    controller: 'LoginCtrl'
+  })
+  $stateProvider
+    .state('side', {
+    url: '/side',
+    templateUrl: 'src/views/partials/home/side.html',
     controller: 'LoginCtrl'
   })
 })
