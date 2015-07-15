@@ -65,7 +65,7 @@ header.navbar {
 }
 
 .navbar-brand>img {
-/*  height: 50px;*/
+  /*  height: 50px;*/
 }
 
 .brand-logo{
@@ -149,11 +149,11 @@ header.navbar.sticky {
 }
 
 .nav-links>li>a{
-     padding: 10px 8px;
+  padding: 10px 8px;
 }
 
 #main-menu li:last-child a {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 
@@ -242,7 +242,7 @@ h1.headline.big{
 
 .overlay {
   position: absolute;
-    top: 8px;
+  top: 8px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -253,19 +253,19 @@ h1.headline {
 }
 
 .home-intro h1.headline {
-    font-size: 124px;
-    line-height: 80px;
-    color: #4fc1e9;
+  font-size: 124px;
+  line-height: 80px;
+  color: #4fc1e9;
 }
 
 div.overlay h4 {
-    font-size: 21px;
-    font-weight: bold;
-    margin-top: 0;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 div.overlay img {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .home-intro h1.headline {
@@ -277,10 +277,10 @@ div.overlay img {
 }
 
 span.btn.filter {
-    border-radius: 20px;
-    margin-right: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .white {
@@ -289,7 +289,7 @@ span.btn.filter {
 
 .grey {
   background-color: #aab2bd;
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 section {
@@ -379,6 +379,14 @@ svg:not(:root) {
   display: block;
 }
 
+.no-display{
+  display: none;
+}
+
+.no-display.display-selected{
+  display: block;
+}
+
 section.home-mentor .group {
   padding-bottom: 22px;
 }
@@ -391,14 +399,15 @@ section.home-mentor #mentors .mix{
 }
 
 .company-row img {
-    width: 112px;
+  width: 125px;
+  padding-bottom: 20px;
 }
 
 .company-row ul li {
-    list-style: none;
-    display: inline;
-    margin-left: 50px;
-    margin-right: 50px;
+  list-style: none;
+  display: inline;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /*** Start of Unknown CSS ***/
@@ -423,7 +432,7 @@ section.home-mentor #mentors .mix{
 }
 
 .tabs{
-/*  display: inline;*/
+  /*  display: inline;*/
   margin: auto 0px;
 }
 
@@ -441,71 +450,75 @@ section.home-mentor #mentors .mix{
   padding-right: 75px;
 }
 
-.slick-dots li button:before{
-  content: '-';
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #36BC9B;
-}
-
 /*** End of Unknown CSS ***/
 
 
 
 /*** Start of Testimonal ***/
+.home-testimonials{
+  padding-bottom: 20px;
+}
+
 .testimonial-row {
-    position: relative;
-    height: 150px;
+  position: relative;
+  height: 150px;
 }
 
 .testimonial-row label {
-    left: 0px;
-    color: #000000;
-    background-color: #9e5f9e;
-    width: 29%;
-    height: 3px;
-    cursor: pointer;
+  left: 0px;
+  color: #000000;
+  background-color: #9e5f9e;
+  width: 24%;
+  height: 3px;
+  cursor: pointer;
 }
 
 .testimonial-row input[type="radio"] {
-    position: absolute;
-    width: 1px;
-    /* Setting this to 0 make it invisible for VoiceOver */
-    height: 1px;
-    /* Setting this to 0 make it invisible for VoiceOver */
-    padding: 0;
-    margin: -1px;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  /* Setting this to 0 make it invisible for VoiceOver */
+  height: 1px;
+  /* Setting this to 0 make it invisible for VoiceOver */
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .testimonial-row .slide {
-    position: absolute;
-    left: -100%;
-    opacity: 0;
-    transition: all 0.6s ease-in;
+  position: absolute;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.6s ease-in;
 }
 
 #first:checked ~ div.one {
-    left: 0;
-    opacity: 1;
-    width: 100%;
+  left: 0;
+  opacity: 1;
+  width: 100%;
 }
 
 #second:checked ~ div.two {
-    left: 0;
-    opacity: 1;
-   width: 100%;
+  left: 0;
+  opacity: 1;
+  width: 100%;
 }
 
 #third:checked ~ div.three {
-    left: 0;
-    opacity: 1;
+  left: 0;
+  opacity: 1;
   width: 100%;
+}
+
+#fourth:checked ~ div.four {
+  left: 0;
+  opacity: 1;
+  width: 100%;
+}
+
+.custom-min-height-400{
+  min-height: 400px;
 }
 
 /*** End of Testimonal ***/
