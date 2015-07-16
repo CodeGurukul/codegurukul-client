@@ -15,30 +15,7 @@
           i.fa.fa-lock
           span Mumbai, In
   #home-main.content.row
-    header.navbar.navbar-static-top.navbar-sticky.white.navbar-stuck(role='banner')
-      .navbar-header
-        button.navbar-toggle.collapsed(data-target='.main-navbar', data-toggle='collapse', data-original-title='', title='')
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand.brand-logo(href='/')
-          img(src='images/logo.png', alt='Codegurkul')
-      nav.collapse.navbar-collapse.main-navbar(role='navigation')
-        .main-menu-container
-          ul#main-menu.nav.navbar-nav.navbar-right
-            li
-              a(href='#') Home
-            li
-              a(href='#') Program
-            li
-              a(href='#') Contact
-            li
-              a(href='#')
-                span Login
-            li
-            li
-              a(href='#loginModal', data-toggle='modal')
-                span.button Get Started
+    include ./partials/nav.jade
 
     section.program-header
       div.row
@@ -49,61 +26,10 @@
           p
             em - Working the Angular way
             
-    section.program-highlight-section
-      div.container.custom-padding-left-right-75
-        div.row
-          div.col-sm-6.highlights
-            h3 Course Highlights:
-            ul.list-unstyled
-              li 
-                h4 Highlight #1
-                p Some description of Highlight #1
-              li 
-                h4 Highlight #2
-                p Some description of Highlight #2
-              li 
-                h4 Highlight #3
-                p Some description of Highlight #3
-              li 
-                h4 Highlight #4
-                p Some description of Highlight #4
-              li 
-                h4 Highlight #5
-                p Some description of Highlight #5
-              li 
-                h4 Highlight #6
-                p Some description of Highlight #6
-                
-          div.col-sm-6.targets
-            h3 This course is perfect for:
-              ul.list-unstyled
-                li 
-                  h4 Target #1
-                  small Some description of Target #1
-                li 
-                  h4 Target #2
-                  small Some description of Target #2
-                li 
-                  h4 Target #3
-                  small Some description of Target #3
-                li 
-                  h4 Target #4
-                  small Some description of Target #4
-            div.row
-              .col-md-8.col-md-offset-2.text-center
-                h4 Want to know more?
-                form
-                  input.form-control.input-md.custom-margin-bottom-15(type='email' placeholder='Email')
-                  button.btn.btn-primary.btn-md Send me the Syllabus
-                
+    include ./partials/angular-workshop/program-highlights.jade
+    
     include ./partials/home/testimonials.jade
     
-    section
-      .container
-        .row
-          .col-md-12.text-center
-            h3 Find this course interesting? Want to enroll?
-          .col-md-6.col-md-offset-3.text-center
-            h4 Course Price : $399
-            h4 Course Duration : 4 days
-            button.btn.btn-primary.btn-lg Register Now!
+    include ./partials/angular-workshop/program-enrolling.jade
+    
+    

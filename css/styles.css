@@ -89,6 +89,10 @@ header.navbar {
   background-color: #FFFFFF;
 }
 
+.header-nav{
+  background-color: #F5F7FA !important;
+}
+
 header.navbar.sticky {
   position: fixed;
   top: 0;
@@ -102,6 +106,10 @@ header.navbar.sticky {
 
 .home-intro .container {
   position: relative;
+}
+
+section.home-intro{
+  background-color: #F5F7FA !important;
 }
 
 .main-menu-container {
@@ -134,7 +142,7 @@ header.navbar.sticky {
 }
 
 #home-main {
-  background-color: #ffffff;
+  background-color: #F5F7FA !important;
   border-radius: 5px;
   box-shadow: 0px 0px 20px #cccccc;
 }
@@ -379,12 +387,8 @@ svg:not(:root) {
   display: block;
 }
 
-.no-display{
-  display: none;
-}
-
-.no-display.display-selected{
-  display: block;
+section.home-mentor{
+  background-color: #F5F7FA !important;
 }
 
 section.home-mentor .group {
@@ -457,19 +461,34 @@ section.home-mentor #mentors .mix{
 /*** Start of Testimonal ***/
 .home-testimonials{
   padding-bottom: 20px;
+  background-color: #F5F7FA !important;
+}
+
+.one.slide p, .two.slide p, .three.slide p, .four.slide p{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  line-height: 2;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.slide{
+  color: #AAB2BD;
 }
 
 .testimonial-row {
   position: relative;
-  height: 150px;
+  height: 350px;
 }
 
 .testimonial-row label {
-  left: 0px;
+  position: relative;
+  top: 250px;
   color: #000000;
   background-color: #9e5f9e;
   width: 24%;
-  height: 3px;
+  height: 5px;
   cursor: pointer;
 }
 
@@ -533,4 +552,50 @@ section.home-mentor #mentors .mix{
 
 .custom-margin-bottom-15{
   margin-bottom: 15px;
+}
+
+.syllabus-email-input{
+  width: 58% !important;
+  border-radius: 0px;
+  border-color: #08AC84;
+  margin-bottom: 10px;  
+  min-width: 236px
+}
+
+.syllabus-button{
+  border-radius: 0px;
+  width: 42%;
+  min-width: 170px;
+  background-color: #3DBD9E !important;
+  border-color: #08AC84 !important;
+}
+
+.register-button{
+  background-color: #3DBD9E !important;
+  border-radius: 0px;
+  border-color: #08AC84 !important;
+}
+
+.syllabus-button:hover, .register-button:hover{
+  background-color: #11D9A8 !important;
+  border-color: #12B98F !important;
+}
+
+.custom-line-height-3{
+  line-height: 3;
+}
+
+.highlights p{
+  line-height: 2;
+}
+
+.highlights i, .targets i{
+  font-size: 75px;
+  margin-bottom: 30px;
+}
+
+.program-highlight-section, .program-enrolling-section{
+  background-color: #aab2bd !important;
+  margin-top: -25px !important;
+  color: white;
 }
