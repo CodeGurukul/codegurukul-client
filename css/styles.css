@@ -308,6 +308,15 @@ section {
   padding-left: 0;
 }
 
+.block-section {
+    min-height: 100vh;
+}
+
+.banner-section {
+    min-height: 50vh;
+}
+
+
 section .overlay {
   height: 75%;
 }
@@ -341,7 +350,7 @@ svg:not(:root) {
   margin: 0 auto;
 }
 
-.section .section-header {
+section .section-header {
   position: relative;
   padding-bottom: 30px;
   min-height: 120px;
