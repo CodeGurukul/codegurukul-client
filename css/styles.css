@@ -128,7 +128,7 @@ section.home-intro{
 }
 
 #main-menu li a:hover {
-  background-color: #FFFFFF;
+  background-color: #f5f7fa;
 }
 
 #main-menu li a span.button {
@@ -149,6 +149,10 @@ section.home-intro{
 
 .about-link, .program-link, .login-link, .contact-link{
   padding-right: 0px;
+}
+
+.about-link:hover, .program-link:hover, .login-link:hover, .contact-link:hover{
+/*  background-color: #F5F7FA !important;*/
 }
 
 .contact-link {
@@ -238,14 +242,18 @@ section.home-intro{
 
 h1.headline {
   font-family: Edo SZ;
-  opacity: 0.6;
+/*  opacity: 0.6;*/
   font-size: 72px;
   line-height: 90px;
 }
 
 h1.headline.big{
   font-size: 110px;
-  line-height: 34px;
+/*  line-height: 34px;*/
+}
+
+.home-testimonials header h1.headline.big{
+  color: #ec87c0;
 }
 
 .overlay {
@@ -276,12 +284,8 @@ div.overlay img {
   margin-top: 30px;
 }
 
-.home-intro h1.headline {
-  color: #4A89DC;
-}
-
 .home-mentor h1.headline {
-  color: #FC6E51;
+  color: #ffce54;
 }
 
 span.btn.filter {
@@ -358,6 +362,11 @@ section .section-header {
 
 .feature-row {
   padding-bottom: 26px;
+}
+
+.feature-row p{
+  font-size: 22px;
+  line-height: 2;
 }
 
 .section-header h2 {
@@ -445,8 +454,7 @@ section.home-mentor #mentors .mix{
 }
 
 .tabs{
-  /*  display: inline;*/
-  margin: auto 0px;
+  padding-left: 0px;
 }
 
 .top-border{
@@ -495,7 +503,7 @@ section.home-mentor #mentors .mix{
   position: relative;
   top: 250px;
   color: #000000;
-  background-color: #9e5f9e;
+  background-color: #aab2bd;
   width: 24%;
   height: 5px;
   cursor: pointer;
@@ -512,6 +520,10 @@ section.home-mentor #mentors .mix{
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.testimonial-row input[type=radio]:checked+label {
+    background-color: #ec87c0;
 }
 
 .testimonial-row .slide {
@@ -553,11 +565,38 @@ section.home-mentor #mentors .mix{
 
 /*** Start of Contact ***/
 
-.bg-map {
-  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=Adarash+Nagar,Andheri+West&scale=2&size=500x500");
-  background-size: cover;
+section.home-contact{
+  min-height: 700px;
 }
+
+.bg-map {
+/*  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=Adarash+Nagar,Andheri+West&scale=1&size=500x500");*/
+  background-image: url('../images/map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-contact header h1.headline.big{
+  color: #fc6e51;
+}
+
 /*** End of Contact ***/
+
+/*Start of Footer CSS*/
+
+section.footer-section{
+  padding-bottom: 30px;
+}
+
+.footer-images{
+  padding:30px;
+}
+
+.footer-logo{
+  padding-bottom: 0px;
+}
+
+/*End of Footer CSS*/
 
 .custom-margin-bottom-15{
   margin-bottom: 15px;
