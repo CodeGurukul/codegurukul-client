@@ -1,4 +1,4 @@
-angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'mgcrea.ngStrap', 'ngSanitize', 'ng-token-auth'])
+angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'ngSanitize', 'ng-token-auth', 'flash'])
   .config(function ($urlRouterProvider, $stateProvider, $locationProvider) {
 
   $urlRouterProvider.otherwise('/');

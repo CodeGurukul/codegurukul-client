@@ -84,9 +84,9 @@
                   .content
                     .form.loginBox
                       form.ng-pristine.ng-valid(method='post', action='/login', accept-charset='UTF-8')
-                        input#email.form-control(type='text', placeholder='Email', name='email')
-                        input#password.form-control(type='password', placeholder='Password', name='password')
-                        input.btn.btn-default.btn-login.login-button(type='button', value='Login', onclick='loginAjax()')
+                        input#email.form-control(type='text', placeholder='Email', name='email' ng-model='login.email')
+                        input#password.form-control(type='password', placeholder='Password', name='password' ng-model='login.password')
+                        input.btn.btn-default.btn-login.login-button(type='button', value='Login', ng-click='login()')
                     .division
                       .line.l
                       span or
@@ -94,9 +94,9 @@
                     .social
                       a.circle.github(href='/auth/github')
                         i.fa.fa-github.fa-fw
-                      a#google_login.circle.google(href='/auth/google_oauth2')
+                      a#google_login.circle.google(ng-click='googleLogin()')
                         i.fa.fa-google-plus.fa-fw
-                      a#facebook_login.circle.facebook(href='/auth/facebook')
+                      a#facebook_login.circle.facebook(ng-click='facebookLogin()')
                         i.fa.fa-facebook.fa-fw
           .col-sm-6.login
             fieldset
@@ -107,11 +107,10 @@
                   .content
                     .form.loginBox
                       form.ng-pristine.ng-valid(method='post', action='/login', accept-charset='UTF-8')
-                        input#email.form-control(type='text', placeholder='Email', name='email')
-                        input#password.form-control(type='password', placeholder='Password', name='password')
+                        input#email.form-control(type='text', placeholder='Email', name='email' ng-model='signup.email')
+                        input#password.form-control(type='password', placeholder='Password', name='password' ng-model='signup.password')
                         input#password.form-control(type='password', placeholder='Confirm Password', name='password')
-                        input.btn.btn-default.btn-login(type='button', value='Signup', onclick='loginAjax()')
+                        input.btn.btn-default.btn-login(type='button', value='Signup', ng-click='signup()')
         .row
           .col-md-12
             hr
-

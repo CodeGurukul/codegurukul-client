@@ -28,6 +28,11 @@ body {
   font-family: Nunito Regular,'Helvetica Neue',sans-serif;
 }
 
+.alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 .wrapper, #home-main {  
   height: 100% 
 }

@@ -1,5 +1,5 @@
 angular.module('Codegurukul')
-  .factory('Auth', function($http, $location, $rootScope, $alert, $window) {
+  .factory('Auth', function($http, $location, $rootScope, $window, Flash) {
     var token = $window.localStorage.token;
     if (token) {
       var payload = JSON.parse($window.atob(token.split('.')[1]));
@@ -50,13 +50,8 @@ angular.module('Codegurukul')
               $window.localStorage.token = token;
               $rootScope.currentUser = payload.user;
               $location.path('/');
-              $alert({
-                title: 'Cheers!',
-                content: 'You have successfully signed-in with Facebook.',
-                animation: 'fadeZoomFadeDown',
-                type: 'material',
-                duration: 3
-              });
+              var message = '<strong>Cheers!</strong> You have successfully signed-in with Facebook.';
+              Flash.create('success', message);
             });
           });
         }, { scope: 'email, public_profile' });
@@ -77,75 +72,47 @@ angular.module('Codegurukul')
                 $window.localStorage.token = token;
                 $rootScope.currentUser = payload.user;
                 $location.path('/');
-                $alert({
-                  title: 'Cheers!',
-                  content: 'You have successfully signed-in with Google.',
-                  animation: 'fadeZoomFadeDown',
-                  type: 'material',
-                  duration: 3
-                });
+                var message = '<strong>Cheers!</strong> You have successfully signed-in with Google.';
+                Flash.create('success', message);
               });
             });
           });
         });
       },
       login: function(user) {
+        console.log(user);
         return $http.post('/api/auth/login', user)
           .success(function(data) {
             $window.localStorage.token = data.token;
             var payload = JSON.parse($window.atob(data.token.split('.')[1]));
             $rootScope.currentUser = payload.user;
             $location.path('/');
-            $alert({
-              title: 'Cheers!',
-              content: 'You have successfully logged in.',
-              animation: 'fadeZoomFadeDown',
-              type: 'material',
-              duration: 3
-            });
+            var message = '<strong>Cheers!</strong> You have successfully logged in.';
+            Flash.create('success', message);
           })
           .error(function() {
             delete $window.localStorage.token;
-            $alert({
-              title: 'Error!',
-              content: 'Invalid username or password.',
-              animation: 'fadeZoomFadeDown',
-              type: 'material',
-              duration: 3
-            });
+            var message = '<strong>Error!</strong> Invalid username or password.';
+            Flash.create('danger', message);
           });
       },
       signup: function(user) {
         return $http.post('/api/auth/signup', user)
           .success(function() {
             $location.path('/login');
-            $alert({
-              title: 'Congratulations!',
-              content: 'Your account has been created.',
-              animation: 'fadeZoomFadeDown',
-              type: 'material',
-              duration: 3
-            });
+            var message = '<strong>Congratulations!</strong> Your account has been created.';
+            Flash.create('success', message); 
           })
           .error(function(response) {
-            $alert({
-              title: 'Error!',
-              content: response.data,
-              animation: 'fadeZoomFadeDown',
-              type: 'material',
-              duration: 3
-            });
+            var message = 'Error!';
+            Flash.create('danger', message);
           });
       },
       logout: function() {
         delete $window.localStorage.token;
         $rootScope.currentUser = null;
-        $alert({
-          content: 'You have been logged out.',
-          animation: 'fadeZoomFadeDown',
-          type: 'material',
-          duration: 3
-        });
+        var message = 'You have been logged out.';
+        Flash.create('info', message); 
       }
     };
   });      
