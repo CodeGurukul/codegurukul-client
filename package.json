@@ -35,6 +35,8 @@
     "karma-chrome-launcher": "^0.1.4",
     "karma-jasmine": "^0.1.5",
     "karma-phantomjs-launcher": "^0.1.4",
-    "katex": "^0.1.1"
+    "katex": "^0.1.1",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
   }
 }
