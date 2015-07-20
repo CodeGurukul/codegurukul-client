@@ -1,29 +1,29 @@
 input[type=radio]{
-		display:none;
-	}
+  display:none;
+}
 
 input[type=radio] + label {
-		display:inline-block;
-	}
+  display:inline-block;
+}
 
 input[type=radio]:checked + label{
-		  background-image: none;
-		  outline: 0;
-    border-top: 4px solid #36BC9B;
-	}
+  background-image: none;
+  outline: 0;
+  /*    border-top: 4px solid #36BC9B;*/
+}
 
 .home-feature #radio1:checked ~ .slide-controls label:nth-child(1),
 .home-feature #radio2:checked ~ .slide-controls label:nth-child(2),
 .home-feature #radio3:checked ~ .slide-controls label:nth-child(3),
 .home-feature #radio4:checked ~ .slide-controls label:nth-child(4) {
-		  background-image: none;
-		  outline: 0;
-    border-top: 4px solid #36BC9B;
-	}
+  background-image: none;
+  outline: 0;
+  border-top: 4px solid #36BC9B;
+}
 
 .home-feature #radio1:checked ~ .sliders .feature-description:nth-child(1), 
 .home-feature #radio2:checked ~ .sliders .feature-description:nth-child(2), 
 .home-feature #radio3:checked ~ .sliders .feature-description:nth-child(3), 
 .home-feature #radio4:checked ~ .sliders .feature-description:nth-child(4) {
   display: block;
-	}
+}
