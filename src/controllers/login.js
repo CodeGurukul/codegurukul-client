@@ -1,17 +1,21 @@
 angular.module('Codegurukul')
-  .controller('LoginCtrl', function($scope, Auth, Flash) {
+  .controller('LoginCtrl', function($scope, Flash, $auth) {
     $scope.login = function() {
-      console.log($scope.signup);
-      Auth.login({ email: $scope.login.email, password: $scope.login.password });
+      $auth.login({ email: $scope.email, password: $scope.password })
+        .then(function() {
+          console.log('You have successfully logged in');
+        })
+        .catch(function(response) {
+          console.log(response.data.message);
+        });
     };
-    $scope.signup = function() {
-      Auth.signup({ email: $scope.signup.email, password: $scope.signup.password });
+    $scope.authenticate = function(provider) {
+      $auth.authenticate(provider)
+        .then(function() {
+          console.log('You have successfully logged in');
+        })
+        .catch(function(response) {
+          console.log(response.data);
+        });
     };
-    $scope.facebookLogin = function() {
-      Auth.facebookLogin();
-    };
-    $scope.googleLogin = function() {
-      Auth.googleLogin();
-    };
-    $scope.pageClass = 'fadeZoom';
 });

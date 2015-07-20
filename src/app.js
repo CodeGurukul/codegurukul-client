@@ -1,4 +1,4 @@
-angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'ngSanitize', 'ng-token-auth', 'flash'])
+angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', 'ngSanitize', 'flash', 'satellizer'])
   .config(function ($urlRouterProvider, $stateProvider, $locationProvider) {
 
   $urlRouterProvider.otherwise('/');
@@ -27,60 +27,50 @@ angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', '
     templateUrl: 'src/views/partials/home/side.html',
     controller: 'LoginCtrl'
   })
+  $stateProvider
+    .state('logout', {
+    url: '/logout',
+    template: null,
+    controller: 'LogoutCtrl'
+  })
+  $stateProvider
+    .state('profile', {
+    url: '/profile',
+    templateUrl: 'src/views/profile.html',
+    controller: 'ProfileCtrl',
+    resolve: {
+      authenticated: function($q, $location, $auth) {
+        var deferred = $q.defer();
+
+        if (!$auth.isAuthenticated()) {
+          $location.path('/login');
+        } else {
+          deferred.resolve();
+        }
+
+        return deferred.promise;
+      }
+    }
+  });
+
 })
 .config(function($authProvider) {
 
     // the following shows the default values. values passed to this method
     // will extend the defaults using angular.extend
-
-    $authProvider.configure({
-      apiUrl:                  '/api',
-      tokenValidationPath:     '/auth/validate_token',
-      signOutUrl:              '/auth/sign_out',
-      emailRegistrationPath:   '/auth',
-      accountUpdatePath:       '/auth',
-      accountDeletePath:       '/auth',
-      confirmationSuccessUrl:  window.location.href,
-      passwordResetPath:       '/auth/password',
-      passwordUpdatePath:      '/auth/password',
-      passwordResetSuccessUrl: window.location.href,
-      emailSignInPath:         '/auth/sign_in',
-      storage:                 'cookies',
-      proxyIf:                 function() { return false; },
-      proxyUrl:                '/proxy',
-      authProviderPaths: {
-        github:   '/api/auth/github',
-        facebook: '/api/auth/facebook',
-        google:   '/api/auth/google'
-      },
-      tokenFormat: {
-        "access-token": "{{ token }}",
-        "token-type":   "Bearer",
-        "client":       "{{ clientId }}",
-        "expiry":       "{{ expiry }}",
-        "uid":          "{{ uid }}"
-      },
-      parseExpiry: function(headers) {
-        // convert from UTC ruby (seconds) to UTC js (milliseconds)
-        return (parseInt(headers['expiry']) * 1000) || null;
-      },
-      handleLoginResponse: function(response) {
-        return response.data;
-      },
-      handleAccountResponse: function(response) {
-        return response.data;
-      },
-      handleTokenValidationResponse: function(response) {
-        return response.data;
-      }
-    });
+    $authProvider.facebook({
+        clientId: '631388166902710',
+        url: '/api/auth/facebook',
+        authorizationEndpoint: 'https://www.facebook.com/v2.3/dialog/oauth',
+        redirectUri: 'http://localhost:3000/',
+        scope: 'email',
+        scopeDelimiter: ',',
+        requiredUrlParams: ['display', 'scope'],
+        display: 'popup',
+        type: '2.0',
+        popupOptions: { width: 481, height: 269 }
+      });
+  
+  console.log(window.location.origin || window.location.protocol + '//' + window.location.host + '/');
   });
 
-$(document).ready(function () {
-$('#mentors').mixItUp();
-var color=["#ed5565", "#fc6e51", "#ffce54",  "#48cfad",  "#4fc1e9",  "#5d9cec", "#ec87c0",  "#f5f7fa", "#aab2bd"];
-$('span.btn.filter').each(function(i){
-      $(this).css('border-color',color[i % color.length]);
-});
-    
-});
