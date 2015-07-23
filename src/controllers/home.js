@@ -1,5 +1,4 @@
 angular.module('Codegurukul')
-  .controller('HomeCtrl', function($scope) {
-   
+  .controller('HomeCtrl', function($scope,config) {
 });
 

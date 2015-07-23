@@ -54,16 +54,16 @@ angular.module('Codegurukul', ['ngResource', 'ui.router', '720kb.socialshare', '
   });
 
 })
-.config(function($authProvider) {
+.config(function($authProvider, config) {
 
     // the following shows the default values. values passed to this method
     // will extend the defaults using angular.extend
     $authProvider.facebook({
-        clientId: '631388166902710',
-        url: '/api/auth/facebook',
-        authorizationEndpoint: 'https://www.facebook.com/v2.3/dialog/oauth',
-        redirectUri: 'http://localhost:3000/',
-        scope: 'email',
+        clientId: config.clientId,
+        url: config.url,
+        authorizationEndpoint: config.authorizationEndpoint,
+        redirectUri: config.redirectUri,
+        scope: config.scope,
         scopeDelimiter: ',',
         requiredUrlParams: ['display', 'scope'],
         display: 'popup',
