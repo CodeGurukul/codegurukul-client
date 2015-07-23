@@ -15,6 +15,78 @@
   src: url("../fonts/edosz.ttf");
 }
 
+.color1{
+  border-color: #ed5565;
+}
+
+.color1.active{
+  background: #ed5565;
+  color: white;
+}
+
+.color2{
+  border-color: #fc6e51;
+}
+
+.color2.active{
+  background: #fc6e51;
+  color: white;
+}
+
+.color3{
+  border-color: #ffce54;
+}
+
+.color3.active{
+  background: #ffce54;
+  color: white;
+}
+
+.color4{
+  border-color: #48cfad;
+}
+
+.color4.active{
+  background: #48cfad;
+  color: white;
+}
+
+.color5{
+  border-color: #4fc1e9;
+}
+
+.color5.active{
+  background: #4fc1e9;
+  color: white;
+}
+
+.color6{
+  border-color: #5d9cec;
+}
+
+.color6.active{
+  background: #5d9cec;
+  color: white;
+}
+
+.color7{
+  border-color: #aab2bd;
+}
+
+.color7.active{
+   background: #aab2bd;
+  color: white;
+}
+
+.color8{
+  border-color: #f5f7fa;
+}
+
+.color8.active{
+  background: #f5f7fa;
+  color: white;
+}
+
 html,
 body {
   width: 100%;

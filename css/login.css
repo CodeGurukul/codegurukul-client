@@ -119,6 +119,7 @@
   margin-bottom: 5px;
   padding: 13px 12px;
   width: 100%;
+  background-color: white;
 }
 
 
@@ -168,8 +169,4 @@ fieldset{
 
 .login-button{
   margin-bottom: 20px !important;
-}
-
-.login-section{
-  background-color: white;
 }

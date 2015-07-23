@@ -4,20 +4,20 @@ header.navbar.navbar-static-top.navbar-sticky.white.navbar-stuck.header-nav(role
       span.icon-bar
       span.icon-bar
       span.icon-bar
-    a.navbar-brand.brand-logo(href='/')
+    a.navbar-brand.brand-logo(ui-sref='home')
       img(src='images/logo.png', alt='Codegurkul')
   nav.collapse.navbar-collapse.main-navbar.header-nav(role='navigation')
     .main-menu-container
       ul#main-menu.nav.navbar-nav.navbar-right.nav-links
         li.about-link
-          a(href='#') About
+          a(ui-sref='about') About
         li.program-link
-          a(href='#') Program
+          a(ui-sref='program') Program
         li.contact-link
-          a(href='#') Contact
+          a(ui-sref='contact') Contact
         li.login-link
-          a(href='#')
+          a(ui-sref='login')
             span Login
         li
-          a(href='#loginModal', data-toggle='modal')
+          a(ui-sref='login', data-toggle='modal')
             span.button Get Started
